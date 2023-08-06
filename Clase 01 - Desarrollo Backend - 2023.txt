@@ -1,0 +1,281 @@
+INTRODUCCIÓN AL DESARROLLO BACKEND CON NODEJS
+2023
+
+
+Introducción a la programación 
+En la programación se utilizan algoritmos, que son secuencias de pasos lógicos que permiten resolver un problema.
+Los lenguajes de programación son herramientas que permiten escribir algoritmos que podemos escribir en un código fuente y que serán ejecutadas por una computadora.
+La programación es el proceso de diseñar, escribir, probar y mantener el código fuente de una aplicación o software.
+La programación es una habilidad muy demandada en la industria tecnológica y puede ser utilizada para una gran variedad de aplicaciones.
+6
+
+Un ejemplo de algoritmo
+7
+Un algoritmo es un conjunto de operaciones que busca resolver un problema determinado a través de secuencias lógicas.
+
+¿Qué es una aplicación?
+Una aplicación es un programa diseñado para ejecutar una tarea o un conjunto de tareas específicas.
+Las aplicaciones pueden ser de escritorio, móviles o web.
+En general, se espera que una aplicación sea fácil de usar, eficiente y resuelva problemas cotidianos.
+Las aplicaciones pueden ser desarrolladas por empresas, equipos de programadores o individuos.
+8
+Ejemplo: 
+Un juego de carreras, una aplicación de mensajería, un editor de texto, una aplicación para pedir comida a domicilio, entre otros.
+
+¿Qué es una aplicación web?
+Una aplicación web es una aplicación que se ejecuta en un navegador web y que permite realizar diversas tareas y actividades a través de internet.
+Las aplicaciones web son accesibles desde cualquier dispositivo con conexión a internet, lo que las hace muy convenientes para el usuario.
+
+9
+Ejemplo: 
+Desde aplicaciones simples como una calculadora o una lista de tareas hasta aplicaciones más complejas como un sistema de comercio electrónico (MercadoLibre).
+
+¿Cómo funciona una aplicación web?
+10
+
+Aplicacion Web Estático vs Dinámica
+11
+
+Desarrollador Aplicación Web
+12
+Desarrollador Frontend
+Se ocupa de la interfaz de usuario de la aplicación.
+Se asegura de que la aplicación sea fácil de usar, accesible y atractiva visualmente.
+Usa herramientas como HTML, CSS y JavaScript para crear la interfaz de usuario de la aplicación.
+Desarrollador Backend:
+Se ocupa de la lógica de negocio de la aplicación y la gestión de datos.
+Crea y mantiene la API y se encarga de integrar la aplicación con otras bases de datos y servicios externos.
+Usa herramientas como Node.js y Express.js.
+Desarrollador FullStack
+
+¿Qué es el backend?
+El backend es la parte de una aplicación web que se encarga del procesamiento de datos y los algoritmos (lógica) de la aplicación.
+La lógica de la aplicación también podemos llamarla lógica de negocio.
+13
+
+¿Qué es JavaScript (js)?
+JavaScript es un lenguaje de programación que se utiliza para conectar el frontend con el backend.
+JavaScript funciona en el navegador web del usuario y puede interactuar con el contenido de una página web.
+
+14
+
+¿Por qué es importante JavaScript?
+Lenguaje de programación versátil y dinámico.
+Ampliamente utilizado en el desarrollo de aplicaciones web.
+Permite conectar frontend con backend y crear efectos visuales en el frontend.
+Utilizado tanto en el frontend como  en el backend (con Node.js para crear aplicaciones escalables).
+15
+
+Sintaxis básica de JavaScript
+Javascript utiliza variables para almacenar datos y operadores para realizar operaciones matemáticas y lógicas.
+Las declaraciones de control de flujo, como "if" y "else", permiten tomar decisiones y ejecutar diferentes acciones en función de las condiciones.
+16
+La sintaxis se refiere a las reglas y convenciones que se utilizan para escribir un código en un lenguaje de programación.
+
+Nodejs - Javascript para Backend
+17
+Entorno de ejecución de JavaScript fuera del navegador (RE - Runtime Environment)
+Basado en el motor V8 de Google Chrome
+Orientado a aplicaciones de servidor y herramientas de desarrollo.
+Gestión de paquetes a través de npm (Node Package Manager).
+
+
+¿Por qué utilizar node.js en el back-end?
+18
+Mismo lenguaje JavaScript en el cliente y en el servidor
+Muy Eficiente porque utiliza modelo de  E/S sin bloqueo y basado en eventos, lo que permite manejar un gran número de conexiones concurrentes sin agotar los recursos del servidor.
+Altamente escalable:  manejar grandes cantidades de tráfico y conexiones.
+Amplia variedad de bibliotecas y módulos
+Comunidad de desarrolladores muy activa
+
+
+Variables / Constantes
+19
+Una variable es un contenedor que se utiliza para almacenar datos. Se puede pensar en una variable como una caja con un nombre en la que puedes guardar un valor. Estos valores pueden ser números, cadenas de texto, objetos, arreglos u otros tipos de datos.
+Las Variables se crean con let:
+
+Las Constantes se crean con const y son variables de sólo lectura (no se pueden modificar).
+
+Las variables creadas sin un valor aún contienen el valor undefined.
+
+let apellidoYNombre = "Juan Lopez";
+let cantidadDisponible = 15;
+cantidadDisponible = 30;
+const PI = 3.141592;
+const EDAD = 23;
+
+Buena práctica: 
+Siempre utilizaremos let en vez de var.
+Usar camelCase para los nombres.
+Buena práctica: 
+Usar mayúscula para los nombres.
+
+Javascript: Tipos de datos
+20
+
+Javascript: Operadores aritméticos
+21
++
+suma
+-
+resta
+*
+producto
+%
+módulo
+++
+incremento
+--
+decremento
+
+Ejemplo de código JavaScript
+Aquí se muestra un ejemplo básico de código JavaScript para sumar dos números:
+22
+Explicación: 
+Este código define dos variables, "numero1" y "numero2", suma sus valores y almacena el resultado en la variable "resultado". Finalmente, se imprime el resultado en la consola con el comando "console.log()".
+
+Javascript: Operadores lógicos
+23
+&&
+and
+||
+or
+!
+not
+?:
+operador ternario
+
+Operadores de comparación
+24
+==
+igualdad
+!=
+desigualdad
+>
+mayor
+<
+menor
+>=
+mayor o igual
+<=
+menor o igual
+===
+estrictamente iguales
+!==
+no estrictamente iguales
+
+Sentencias condicionales: if / if..else
+25
+if (condicion) {    código que se ejecuta si la condición es verdadera}
+if (condicion) {    código que se ejecuta si la condición es verdadera} else {     código que se ejecuta si la condición es falsa}
+
+Javascript: Funciones
+26
+function nombre(par1, par2, par3) {    /* código */}
+function sumar(numero1,numero2){
+return numero1+numero2;
+}
+
+Una función es un bloque de código reutilizable que realiza una tarea específica cuando se invoca o se llama. Una función puede recibir datos de entrada, llamados argumentos o parámetros, realizar operaciones en esos datos y devolver un resultado.
+
+Javascript: Funciones
+27
+Para invocar una función se utiliza el operador ()
+
+
+Se puede almacenar una función en una variable sin invocarla.
+
+
+Funciones flecha (arrow function)
+
+let resultadoSuma = sumar(2,3);
+let c = sumar;
+d = c(5,6);  /* d contendrá 11 */
+
+sumar = (a, b) => { return a + b; }
+
+sumar = (a, b) => a + b;
+
+
+
+
+Javascript: Objetos
+28
+
+Javascript: Objetos
+29
+Se puede acceder a las propiedades mediante la notación punto:O usando corchetes [ ]
+let m = miAuto.marca;
+auto.marca = "Fiat";
+let m = miAuto["marca"];
+auto["marca"] = "Fiat";
+
+Javascript: Arreglos
+30
+Sintaxis:
+
+
+Ejemplo:
+
+
+Acceder a los elementos de un array:
+
+
+let nombre-array = [item1, item2, ...];  
+
+let colores = ["Verde","Rojo","Azul"];
+
+let color1 = colores[0];
+colores[2] = "Amarillo";
+
+Los arreglos, también conocidos como arrays, son estructuras de datos que permiten almacenar y organizar múltiples valores en una sola variable. Los arreglos son colecciones ordenadas, lo que significa que los elementos se almacenan en una secuencia y se accede a ellos mediante un índice numérico.
+
+Sentencias iterativas: for 
+31
+for (sentencia1; sentencia2; sentencia3) {    código
+//break;
+//continue; }
+for (let i = 0; i < cosas.length; i++) {  console.log(cosas[i]);}
+
+Sentencias iterativas: for in
+32
+/* Recorre las propiedades de un objeto */
+
+for (let propiedad in Persona) {  console.log(Persona[propiedad]);}
+
+Javascript: JSON
+33
+JSON (se pronuncia Yeison) viene de JavaScript Object Notation
+Es un formato de intercambio de datos entre aplicaciones independiente del lenguaje
+Es auto-descripto 
+Es fácil de entender
+{	"clientes":[   				{"nombre":"Juan", "apellido":"Perez"},     				{"nombre":"Pedro", "apellido":"Garcia"},    				{"nombre":"Maria", "apellido":"Sanchez"}			  ]}
+
+Bueno, Vamo a Codea!!!!
+34
+Utilizando la herramienta javascript-tester, ingresando al siguiente sitio:
+https://codebeautify.org/javascript-tester
+
+Crear un programa en JavaScript que permita realizar un registro de estudiantes. El programa debe tener las siguientes funcionalidades:
+Permitir al usuario ingresar la cantidad de estudiantes que desea registrar.
+Solicitar al usuario que ingrese los nombres y edades de los estudiantes.
+Almacenar la información de cada estudiante en un objeto con las propiedades nombre y edad.
+Guardar cada objeto del estudiante en un array.
+Mostrar en pantalla la lista de estudiantes registrados, mostrando el nombre y la edad de cada uno.
+
+
+Actividad 1: Javascript
+35
+Utilizando la herramienta javascript-tester, ingresando al siguiente sitio:
+https://codebeautify.org/javascript-tester
+Escribe una función llamada calcularPromedio que tome como parámetro un arreglo de números y calcule el promedio de esos números. La función debe retornar el promedio calculado: 
+Instrucciones:
+Crea una función llamada calcularPromedio con un parámetro llamado numeros.
+Dentro de la función, declara una variable llamada suma y asígnale el valor inicial de 0.
+Utiliza la sentencia iterativa for para recorrer cada número en el arreglo numeros.
+En cada iteración, suma el número actual al valor de suma.
+Después de recorrer todos los números, calcula el promedio dividiendo suma entre la longitud del arreglo numeros.
+Retorna el promedio calculado.
+Entrega el codigo fuente resultante en la actividad del aula virtual.
+
+MUCHAS GRACIAS
